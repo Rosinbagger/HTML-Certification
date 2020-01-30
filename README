@@ -4,6 +4,9 @@ You found my README!
 Making edits my dudes!
 
 
+1/30/20: Added 'portfoliocss.css'
+  - removed style element from 'portfolio.html' and created a css file to store them instead
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 1/30/20: Added 'portfolio.html"
   - the design is only to be judged on function, not form
   - this project is to be turned in to freecodecamp.com as part f my HTML certification process.
