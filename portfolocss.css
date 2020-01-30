@@ -1,0 +1,64 @@
+
+body {
+    background-color: darkslategrey;
+}
+
+
+#navbar {
+    background-color: crimson;
+    padding: 5%;
+    text-align: center;
+    
+}
+.navlink {
+    color:hotpink;
+    font-size: 30px;
+}
+li {
+    display: inline;
+    padding: 5px;
+}
+#welcome-section {
+    background-color: floralwhite;
+    text-align: center;
+    padding: 5%;
+}
+#projects {
+    background-color: coral;
+    text-align: center;
+    padding: 5%;
+}
+.grid {
+    display: grid;
+    grid-area: auto;
+    grid-template-columns: auto auto auto;
+    background-color: burlywood;
+    padding: 5%;
+    justify-items: center;
+}
+.project-tile {
+    background-color: brown;
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    margin: 5%;
+    color: khaki;
+}
+#contact {
+    background-color: darkgrey;
+    padding: 5%;
+    text-align: center;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    
+}
+#links{
+    background-color: gainsboro;
+    padding: 5%;
+
+}
+#profile-link{
+    margin: 5%;
+}
