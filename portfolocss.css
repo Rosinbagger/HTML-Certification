@@ -1,18 +1,34 @@
 
+
+@media(max-width: 75em) {
+    html {
+        font-size: 60%;
+    }
+}
+
+
+
 body {
     background-color: darkslategrey;
+
 }
 
 
 #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: crimson;
-    padding: 5%;
-    text-align: center;
+    justify-content: center;
+    text-align: left;
+    position: fixed;
+    width: 100%;
+    top: 0;
     
 }
 .navlink {
     color:hotpink;
-    font-size: 30px;
+    font-size: 2vw;
 }
 li {
     display: inline;
@@ -21,42 +37,54 @@ li {
 #welcome-section {
     background-color: floralwhite;
     text-align: center;
-    padding: 5%;
+    
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 #projects {
     background-color: coral;
     text-align: center;
-    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 .grid {
     display: grid;
     grid-area: auto;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 4fr));
     background-color: burlywood;
-    padding: 5%;
+    
     justify-items: center;
+    width: auto;
 }
 .project-tile {
     background-color: brown;
     text-align: center;
-    height: 150px;
-    width: 150px;
     margin: 5%;
     color: khaki;
 }
 #contact {
     background-color: darkgrey;
-    padding: 5%;
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    width: 100%;
 }
 .contact-form{
     display: flex;
     flex-direction: column;
+    width: auto;
     
 }
 #links{
     background-color: gainsboro;
-    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 
 }
 #profile-link{
