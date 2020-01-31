@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="product_landing_page_css.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product Landing Page</title>
+    <style>
+            h1 {
+                background-color: black;
+                font: bold;
+                color:blanchedalmond;
+                
+            }
+            #body {
+                background-color: chocolate;
+            }
+            #header {
+                background-color: cornflowerblue;
+            }
+            #subscribe {
+                background-color: darkkhaki;
+            }
+            #nav-bar {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                background-color: burlywood;
+                
+            }
+            .nav-bar {
+             background-color: burlywood;
+                display: flex;
+                flex-direction: column;
+           
+            }
+            .nav-link {
+                padding: 10px, 10px;
+            }
+            ul {
+                display: inline;
+            }
+            .subscribe {
+                text-align: center;
+            }
+            form {
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                
+        
+            }
+            #video-frame{
+                display: flex;
+                justify-content: center;  
+                flex-direction: column;   
+                align-items: center;     
+            }
+            li {
+                list-style: none;
+            }
+            #pricing {
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                justify-content: space-evenly;
+                text-align: center;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            ol {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+            
+            }
+            
+    </style>
+</head>
+<body id="body">
+    <div>
+        <header id="header">
+            <div id="logo">
+                <img src="https://drive.google.com/open?id=1HldGRjxIdFpoXjc6SidJJ3KDUo5p0XqP">
+            </div>
+            <div>
+                <nav id="nav-bar" name="nav-bar">
+                    <ul class="nav-bar">
+                        <li>
+                           <a class="nav-link" href="#features">Features   </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#video">How It Works   </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="pricing">Pricing   </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <div id="subscribe">
+        <br>
+        <h2 class="subscribe">
+            Subscribe for Deals and Product Info
+        </h2>
+        <form action="https://www.freecodecamp.com/email-submit)." method="push" id="form">
+            <input class="subscribe" type="email" name="email" id="email" required placeholder="enter email" >
+            
+            <input id="submit" type="submit" value="Submit">
+        </form>
+        <br>
+    </div>
+    <br>
+    <div id="video-frame">
+        <h2>
+            See It Work
+        </h2>
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/ELh7Yd7WLtE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+    </div>
+    <br>
+    <section id="pricing">
+        <div>
+            <div>
+                <ol>
+                    <h1>Tier 1 Shit</h1>
+                <li> Some things </li>
+                <li>*FREE GIFT*</li>
+                </ol>
+                <button>
+                    Buy Now
+                </button>
+            </div>
+            <div>
+                <ol>
+                    <h1>Tier 2 Shit</h1>
+                <li>Eerything from Tier 1</li>
+                <li>plus 4 sets of trash</li>
+                <li>*Comes with limited edition trash bag*</li>
+                </ol>
+                <button>
+                    Buy Now
+                </button>
+            </div>
+            <div>
+                
+                <ol>
+                    <h1>Tier 3 Primo Shit</h1>
+                <li>everything from Tier 1 and 2</li>
+                <li>four things you wont use</li>
+                <li>2 things to re-gift</li>
+                <li>12 month sub to recyclling paper</li>
+                <li>*BEST DEAL*</li>
+                </ol>
+                <button>
+                    Buy Now
+                </button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
