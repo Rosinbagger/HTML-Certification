@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+    <style>
+       form {
+           background-color: darkkhaki;
+           margin: 0 auto;
+           max-width: 700px;
+           padding: 2%;
+           
+       }
+      
+       textarea {
+           max-width: 400px;
+           max-height: 200px;
+           width: 400px;
+           max-height: 100px;
+           
+
+       }
+        .form-control {
+            display: block;
+            background-color: white;
+        }
+        
+        .form-group {
+            margin: 0 auto 1.25rem auto;
+        }
+        .input-radio {
+            display: block;
+            
+        }
+        .input-textarea {
+           min-height: 100px;
+           width: 100%;
+           resize: vertical;
+           
+        
+
+        }
+        #survey-form {
+           
+            color:black;
+            font-size: 18px;
+
+        }
+        #header {
+            color:teal;
+        }
+        #title {
+            font-size: 60px;
+            text-align: center;
+        }
+        label {
+            display: flex;
+           margin: auto;
+        }
+        #description {
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+<body>
+   <header id="header">
+       <h1 id="title">
+           MV PHOTOS
+       </h1>
+       <p id="description"> please fill out this form to make an appointment request.</p>
+    </header>
+    <form id="survey-form"> 
+        <div class="form-group"> <!--Name-->
+            <label id="name-label" for="name" > <p>Name</p></label>
+            <input type="text" name= "name" id="name" class="form-control" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group" > <!--Email-->
+            <label id="email-label" for="email">
+                <p>Email</p>
+            </label>
+            <input type="email" name= "email" id="email" class="form-control" placeholder="email adress" required>
+        </div>
+        <div class="form-group">
+            <p>
+                Subjects
+            </p>
+            <label>
+                <input type="checkbox" name="prefer" value="Individual"> Individual
+            </label>
+            <label>
+                <input type="checkbox" name="prefer" value="Group"> Group
+            </label>
+            <label>
+                <input type="checkbox" name="prefer" value="Pets"> Pets
+            </label>
+        </div>
+        <div class="form-group"> <!--Number of Participants-->
+            <label id="number-label"><p>How many?</p></label>
+            <input type= "number" name="number" id="number" class="form-control" placeholder="how many participants?" min=0 max=10 required>
+        </div>
+        <div class="form-group"> <!--Event-->
+           <label id="event-label"></label> <p>Event</p></label>
+            <label>
+                <input type="radio" value="Wedding" name="Event" class="input-radio"> Wedding
+                </label>
+            <label>
+                <input type="radio" value="Product" name="Event" class="input-radio"> Product
+                </label>
+            <label>
+                <input type="radio" value="Social-Media" name="Event" class="input-radio"> Social Media
+            </label>
+            <label>
+                <input type="radio" value="Vacation" name="Event" class="input-radio"> Vacation
+            </label>
+            <label>
+                <input type="radio" value="Portraits" name="Event" class="input-radio"> Portraits
+            </label>
+            <label>
+                    <input type="radio" value="Other" name="Event" class="input-radio"> Other
+                </label>
+
+        </div>
+        
+        <div class="form-group"> <!--Package-->
+            <label id="package-label"><p>Package</p></label>
+            <select id="dropdown" class="form-control" required>
+                <option disabled selected value>Select a package...</option>
+                <option value>1 hour</option>
+                <option value>3 hour</option>
+                <option value>6 hour</option>
+            </select>
+        </div>
+        <div class="form-group"> <!--Date-->
+            <label><p>Date</p></label>
+            <input type="date">
+        </div>
+        
+        <div class="form-group"> <!--Any Aditional Info-->
+            <label><p>Any additional info:</p></label>
+            <div>
+                <textarea class="input-textarea" placeholder="any additional info or comments..."></textarea>
+            </div>
+        </div>
+        <div class="form-group"> <!--Submit-->
+            <button id="submit" class="submit-button">Make Request</button>
+        </div>
+    </form>
+
+    
+</body>
+</html>
+
+<!--
+    
+passed
+    
+-->
